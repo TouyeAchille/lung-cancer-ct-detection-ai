@@ -81,22 +81,22 @@ processor = ViTImageProcessor.from_pretrained(
 
 4. Concevoir et entraîner un modèle de détection et de classification des nodules pulmonaires,
 
-5 Evaluer ses performances ( Precision, F1-score, etc.. ).
+5. Evaluer ses performances ( Precision, F1-score, etc.. ).
 
 ## Bases de données publiques
+
 1 - <a href="https://www.cancerimagingarchive.net/collection/lidc-idri/"> cancerimagingarchive.net </a>
+
 2 - <a href="https://www.cancerimagingarchive.net/analysis-result/dicom-lidc-idri-nodules/"> dicom-lidc-idri-nodules </a> 
 
 
 ## Ressources
-1 - <a href="https://project-monai.github.io/">project-monai.github.io/</a> 
+1 - <a href="https://project-monai.github.io/"> project-monai.github.io/</a> 
 
-2 - pylidc (accès facile aux annotations) SimpleITK (lire les CT)
+2 - <a href="https://www.dicomstandard.org/current/"> dicomstandard </a>
 
-4 - <a href="https://www.dicomstandard.org/current/"> dicomstandard </a>
+3 - <a href="https://github.com/DorsaRoh/LungAI">LungAI </a> 
 
-5 - <a href="https://github.com/DorsaRoh/LungAI">:LungAI </a> 
+4 - <a href="https://huggingface.co/dorsar/lung-cancer-detection"> lung-cancer-detection </a> 
 
-6 - <a href="https://huggingface.co/dorsar/lung-cancer-detection"> lung-cancer-detection </a> 
-
-
+- Bon courage
