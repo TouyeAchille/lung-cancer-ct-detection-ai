@@ -41,10 +41,10 @@ from torchvision.models import efficientnet_b0
 
 model = efficientnet_b0(pretrained=True)
 model.classifier[1] = nn.Linear(model.classifier[1].in_features, 2)
-
+etc ...
 ```
 ---
-
+```
 import torch.nn as nn
 from torchvision import models
 
@@ -53,11 +53,12 @@ model = models.vgg16(pretrained=True)
 model.classifier[6] = nn.Linear(4096, 4)  # 4 classes
 
 model = model.to("cuda")
+```
 
-# Vision Transformer (modèle moderne) : **ViT-Base Patch16-224**
+## Vision Transformer (modèle moderne) : **ViT-Base Patch16-224**
 
 ## Fine-tuning ViT avec HuggingFace
-Exemple
+
 ```python
 from transformers import ViTForImageClassification
 from transformers import ViTImageProcessor
@@ -75,12 +76,12 @@ processor = ViTImageProcessor.from_pretrained(
 )
 ```
 
-3. Développer un pipeline de prétraitement des images médicales (normalisation, segmentation
-pulmonaire, augmentation de données) : pipeline complet CT-scan → Deep Learning → détection du cancer.
+
+3. Développer un pipeline de prétraitement des images médicales (normalisation, segmentation pulmonaire, augmentation de données) : pipeline complet CT-scan → Deep Learning → détection du cancer.
 
 4. Concevoir et entraîner un modèle de détection et de classification des nodules pulmonaires,
 
-5 Evaluer ses performances (sensibilité, spécificité, AUC, F1-score, etc.. ).
+5 Evaluer ses performances ( Precision, F1-score, etc.. ).
 
 ## Bases de données publiques
 1 - <a href="https://www.cancerimagingarchive.net/collection/lidc-idri/"> cancerimagingarchive.net </a>
